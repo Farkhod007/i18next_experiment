@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="https://unpkg.com/i18next/dist/umd/i18next.js" defer></script>
+        <script type="module" src="app.js" defer></script>
+    </head>
+    <body>
+        <h1 id="title" data-i18n="title, {element: 'i18next'}"></h1>
+        <p>
+            <span id="paragraph-prefix" data-i18n="paragraph.prefix"></span>:
+            <span id="paragraph-suffix" data-i18n="paragraph.suffix"></span>
+        </p>
+        <p id="products-found" data-i18n="productsFound, {count: 10}"></p>
+        <ul>
+            <li id="message-one" data-i18n="messageOne"></li>
+            <li id="message-two" data-i18n="messageTwo"></li>
+            <li id="message-three" data-i18n="messageThree"></li>
+        </ul>
+    </body>
+</html>
